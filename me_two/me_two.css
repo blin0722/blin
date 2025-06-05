@@ -1,0 +1,120 @@
+/* set the font to a sans serif google font */
+body {
+    font-family:'Inter', sans-serif;
+}
+
+/* set the color and size of all h1 and h2 and leave a margin of 30px below them */
+h1 {
+    font-size: larger;
+    color:blueviolet;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: large;
+    color:darkcyan;
+    margin-bottom: 30px;
+}
+
+/* put a border around the list and center it on the page (do NOT center the list items) */
+ul {
+    border: 2px solid green;
+    width:250px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* display your favorite food image in a div using a background image. place the explanatory text in a div next to it */
+.food-section-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.food-image-div {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    background-image: url('images/hotpot.jpg');
+    background-size: cover;
+    background-position: center;
+}       
+
+.food-text-div {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color:rgb(244, 239, 233);
+}
+
+/* add a background color to alternate lines in the table */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    overflow-x:auto;
+    display:block;
+}
+
+th,td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(163, 149, 233);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(163, 149, 233);
+}
+
+/* styling for Guest Book, make sure all labels should be right aligned */
+
+.guestbook-form {
+    display: flex;
+    flex-direction: column;
+}
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.form-row label {
+    flex: 1;
+    text-align: right;
+    padding-right: 15px;
+}
+.form-row input,
+.form-row select,
+.form-row button {
+    flex: 2;
+    padding: 5px;
+}
+
+/* Add icons for Facebook and Twitter (X) to the page that are in a fixed position of 100px from the 
+top and 35px in from the right corner of the page */
+
+.social-icons-container {
+    position:fixed;
+    top: 100px;
+    right: 35px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+.social-icon {
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon:hover {
+    opacity: 1;
+}
+
